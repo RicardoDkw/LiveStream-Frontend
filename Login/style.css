@@ -1,0 +1,49 @@
+html, body{
+    background: #253141;
+    font-family: "Montserrat" ,sans-serif;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(37, 49, 65, 0.6)  100%,
+    #253141 0px,
+    #253141 0px
+    ), 
+    url("https://s2.glbimg.com/Nj22VKjlcoyTdy3XH_XXywqYmhI=/0x0:4000x2250/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/0/D/U1xnpFTtq5V6RIwj35yg/master-16-9-standard-edition-final-4k-3layers-min.jpg");
+    background-size: cover;
+    background-position: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}

@@ -1,0 +1,323 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+    }
+     
+    /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+    ::-webkit-scrollbar-track {
+    background:#333;
+    }
+     
+    /* aqui é a alça da barra, que demonstra a altura que está na página*/
+    ::-webkit-scrollbar-thumb {
+    background: #2e9dd8;
+    }
+
+html, body{
+    background: #253141;
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(37, 49, 65, 0.6)  100%,
+    #253141 0,
+    #253141 0
+    ), 
+    url("https://s2.glbimg.com/Nj22VKjlcoyTdy3XH_XXywqYmhI=/0x0:4000x2250/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/0/D/U1xnpFTtq5V6RIwj35yg/master-16-9-standard-edition-final-4k-3layers-min.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header .left-menu{
+    display: flex;
+}
+
+header .left-menu .logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+header .left-menu .logo2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00b4f0;
+}
+
+
+header .left-menu .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    cursor: pointer;
+}
+
+header .left-menu .menu a{
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 0 20px;
+    text-transform: uppercase; 
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+
+header .left-menu .menu a:hover{
+    color: yellowgreen;
+}
+
+header .left-menu .menu .fa{
+    margin-left: 10px;
+}
+
+header .right-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .right-menu .language{
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 0 60px 0 0;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+header .right-menu .language .fa{
+    margin-left: 10px;
+}
+
+header .right-menu .language:hover{
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+header .right-menu .signin{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: none;
+    background: #0375d5;
+    color: white;
+}
+
+header .right-menu .signin:hover{
+    background: #253141;
+}
+
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited{
+    color: white;
+}
+
+.container{
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.section-title{
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#featured{
+    padding: 50px 0;
+}
+
+
+#featured .videos-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr 620px 2fr 1fr;
+    grid-gap: 10px;
+}
+
+#featured .videos-section .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured .videos-section .video .image{
+    width: 100%;
+    height: 300px;
+    background: url("https://meups.com.br/wp-content/uploads/2021/05/BioMutant-PlayStation-4-900x503.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#featured .videos-section .video.center{
+    width: 100%;
+    height: 349px;
+    background: 0;
+}
+
+#featured .videos-section .video.center .image{
+    width: 100%;
+    height: 349px;
+    background: url("https://www.thesixthaxis.com/wp-content/uploads/2019/11/TSA-Screen-Shot-13112019-11.14.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    border: 2px solid #0375d5;
+}
+
+#featured .videos-section .video:nth-child(1) .image,
+#featured .videos-section .video:nth-child(5) .image{
+    position: relative;
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow{
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#featured .videos-section .video:nth-child(5) .image .arrow{
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#featured .videos-section .video:nth-child(5) .image .arrow:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow .fa,
+#featured .videos-section .video:nth-child(5) .image .arrow .fa{
+    font-size: 4rem;
+    color: #00b4f0; 
+}
+
+#featured .dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#featured .dots .circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured .dots .circles circle{
+    width: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#featured .dots .circles .circle .background-color{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    margin: 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+#featured .dots .circles .circle:hover .background-color{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #00b4f0;
+}
+
+
+#featured .dots .circles .circle.active .background-color{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #00b4f0;
+}
+
+#top-games .games{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+#top-games .games .game{
+    background: url("https://image.api.playstation.com/vulcan/ap/rnd/202009/0201/KUOLFGzfPMIY4vBL9luz2s9t.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,.45);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,.45);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,.45);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#top-games .games .game .info{
+    background: #253041;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#top-games .games .game:hover .info{
+    background: #313f55;
+}
+
+#top-games .games .game .info .title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#top-games .games .game .info .views{
+    font-weight: 300;
+    color: #8c919d;
+    font-size: 0.9rem;
+}
+
+#top-games .games .game .info .views .fa{
+    margin-right: 5px;
+}
